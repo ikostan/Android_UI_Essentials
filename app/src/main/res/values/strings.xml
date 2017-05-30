@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">UI Essentials</string>
+    <string name="txt_textView">Hello World!</string>
 </resources>
