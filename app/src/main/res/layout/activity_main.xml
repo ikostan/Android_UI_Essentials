@@ -4,34 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorPrimaryDark"
+    android:backgroundTint="@android:color/darker_gray"
     tools:context="com.example.uiessentials.MainActivity">
 
     <TextView
         android:id="@+id/txtScreen"
         android:layout_width="0dp"
-        android:layout_height="105dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="11dp"
-        android:layout_marginRight="11dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:background="@android:color/background_light"
-        android:gravity="right|center"
+        android:backgroundTint="@android:color/background_light"
+        android:gravity="center_vertical|center_horizontal"
         android:paddingRight="4dp"
         android:text="@string/original_text"
+        android:textAlignment="textEnd"
         android:textColor="@android:color/holo_green_dark"
-        android:textSize="30sp"
+        android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/guidelineHor7"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guidelineHor7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.14" />
+        app:layout_constraintGuide_percent="0.14"
+        tools:layout_editor_absoluteY="72dp"
+        tools:layout_editor_absoluteX="0dp" />
 
     <Button
         android:id="@+id/btn_oneDevX"
@@ -41,9 +48,10 @@
         android:text="@string/btn_one_dev_x"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/btn_pow"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btn_pow"
-        app:layout_constraintLeft_toRightOf="@+id/btn_pow" />
+        app:layout_constraintBottom_toTopOf="@+id/btnDevide"
+        app:layout_constraintTop_toBottomOf="@+id/txtScreen" />
 
     <Button
         android:id="@+id/btn_pow"
@@ -53,9 +61,10 @@
         android:text="@string/btn_pow_2"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/btn_root"
         app:layout_constraintRight_toLeftOf="@+id/btn_oneDevX"
-        app:layout_constraintTop_toTopOf="@+id/btn_root"
-        app:layout_constraintLeft_toRightOf="@+id/btn_root" />
+        app:layout_constraintBottom_toTopOf="@+id/btnDelete"
+        app:layout_constraintTop_toBottomOf="@+id/txtScreen" />
 
     <Button
         android:id="@+id/btn_root"
@@ -65,9 +74,10 @@
         android:text="@string/btn_root"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/btnPercent"
         app:layout_constraintRight_toLeftOf="@+id/btn_pow"
-        app:layout_constraintTop_toTopOf="@+id/btnPercent"
-        app:layout_constraintLeft_toRightOf="@+id/btnPercent" />
+        app:layout_constraintBottom_toTopOf="@+id/btnC"
+        app:layout_constraintTop_toBottomOf="@+id/txtScreen" />
 
     <Button
         android:id="@+id/btnPercent"
@@ -77,20 +87,19 @@
         android:text="@string/btn_prcnt"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="@+id/guidelineHor7"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/btnCE"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintRight_toLeftOf="@+id/btn_root" />
+        app:layout_constraintRight_toLeftOf="@+id/btn_root"
+        app:layout_constraintTop_toBottomOf="@+id/txtScreen" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guidelineHor6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.31" />
+        app:layout_constraintGuide_percent="0.3"
+        tools:layout_editor_absoluteY="154dp"
+        tools:layout_editor_absoluteX="0dp" />
 
     <Button
         android:id="@+id/btnDevide"
@@ -100,9 +109,10 @@
         android:text="@string/btn_devision"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/btnDelete"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btnDelete"
-        app:layout_constraintLeft_toRightOf="@+id/btnDelete" />
+        app:layout_constraintBottom_toTopOf="@+id/btnMult"
+        app:layout_constraintTop_toBottomOf="@+id/btn_oneDevX" />
 
     <Button
         android:id="@+id/btnDelete"
@@ -112,9 +122,10 @@
         android:text="@string/btn_delete"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/btnC"
         app:layout_constraintRight_toLeftOf="@+id/btnDevide"
-        app:layout_constraintTop_toTopOf="@+id/btnC"
-        app:layout_constraintLeft_toRightOf="@+id/btnC" />
+        app:layout_constraintBottom_toTopOf="@+id/btn9"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pow" />
 
     <Button
         android:id="@+id/btnC"
@@ -124,9 +135,10 @@
         android:text="@string/btn_c"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/btnCE"
         app:layout_constraintRight_toLeftOf="@+id/btnDelete"
-        app:layout_constraintTop_toTopOf="@+id/btnCE"
-        app:layout_constraintLeft_toRightOf="@+id/btnCE" />
+        app:layout_constraintBottom_toTopOf="@+id/btn8"
+        app:layout_constraintTop_toBottomOf="@+id/btn_root" />
 
     <Button
         android:id="@+id/btnCE"
@@ -136,20 +148,19 @@
         android:text="@string/btn_ce"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="@+id/guidelineHor6"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineHor5"
+        app:layout_constraintBottom_toTopOf="@+id/btn7"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/btnC"
-        app:layout_constraintVertical_bias="0.555" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPercent" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guidelineHor5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.41" />
+        app:layout_constraintGuide_percent="0.39"
+        tools:layout_editor_absoluteY="200dp"
+        tools:layout_editor_absoluteX="0dp" />
 
     <Button
         android:id="@+id/btnMult"
@@ -159,9 +170,10 @@
         android:text="@string/btn_x"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/btn9"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btn9"
-        app:layout_constraintLeft_toRightOf="@+id/btn9" />
+        app:layout_constraintBottom_toTopOf="@+id/btnMinus"
+        app:layout_constraintTop_toBottomOf="@+id/btnDevide" />
 
     <Button
         android:id="@+id/btn9"
@@ -171,9 +183,10 @@
         android:text="@string/btn_9"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/btn8"
         app:layout_constraintRight_toLeftOf="@+id/btnMult"
-        app:layout_constraintTop_toTopOf="@+id/btn8"
-        app:layout_constraintLeft_toRightOf="@+id/btn8" />
+        app:layout_constraintBottom_toTopOf="@+id/btn6"
+        app:layout_constraintTop_toBottomOf="@+id/btnDelete" />
 
     <Button
         android:id="@+id/btn8"
@@ -184,8 +197,9 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/btn7"
-        app:layout_constraintTop_toTopOf="@+id/btn7"
-        app:layout_constraintRight_toLeftOf="@+id/btn9" />
+        app:layout_constraintRight_toLeftOf="@+id/btn9"
+        app:layout_constraintBottom_toTopOf="@+id/btn5"
+        app:layout_constraintTop_toBottomOf="@+id/btnC" />
 
     <Button
         android:id="@+id/btn7"
@@ -195,20 +209,19 @@
         android:text="@string/btn_7"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="@+id/guidelineHor5"
-        android:layout_marginTop="31dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineHor4"
+        app:layout_constraintBottom_toTopOf="@+id/btn4"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/btn8"
-        app:layout_constraintVertical_bias="0.666" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCE" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guidelineHor4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.56" />
+        app:layout_constraintGuide_percent="0.54"
+        tools:layout_editor_absoluteY="276dp"
+        tools:layout_editor_absoluteX="0dp" />
 
     <Button
         android:id="@+id/btnMinus"
@@ -218,9 +231,10 @@
         android:text="@string/btn_minus"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/btn6"
-        app:layout_constraintTop_toTopOf="@+id/btn6" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnPlus"
+        app:layout_constraintTop_toBottomOf="@+id/btnMult" />
 
     <Button
         android:id="@+id/btn6"
@@ -230,9 +244,10 @@
         android:text="@string/btn_6"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="@+id/btn5"
         app:layout_constraintLeft_toRightOf="@+id/btn5"
-        app:layout_constraintRight_toLeftOf="@+id/btnMinus" />
+        app:layout_constraintRight_toLeftOf="@+id/btnMinus"
+        app:layout_constraintBottom_toTopOf="@+id/btn3"
+        app:layout_constraintTop_toBottomOf="@+id/btn9" />
 
     <Button
         android:id="@+id/btn5"
@@ -242,32 +257,32 @@
         android:text="@string/btn_5"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/btn4"
         app:layout_constraintRight_toLeftOf="@+id/btn6"
-        app:layout_constraintTop_toTopOf="@+id/btn4"
-        app:layout_constraintLeft_toRightOf="@+id/btn4" />
+        app:layout_constraintBottom_toTopOf="@+id/btn2"
+        app:layout_constraintTop_toBottomOf="@+id/btn8" />
 
     <Button
         android:id="@+id/btn4"
         android:layout_width="88dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="39dp"
-        android:layout_marginTop="8dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_4"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineHor3"
+        app:layout_constraintBottom_toTopOf="@+id/btn1"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guidelineHor4"
         app:layout_constraintRight_toLeftOf="@+id/btn5"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/btn7" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guidelineHor3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.74" />
+        app:layout_constraintGuide_percent="0.72"
+        tools:layout_editor_absoluteY="368dp"
+        tools:layout_editor_absoluteX="0dp" />
 
     <Button
         android:id="@+id/btnPlus"
@@ -279,7 +294,8 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/btn3"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btn3" />
+        app:layout_constraintBottom_toTopOf="@+id/btnEqual"
+        app:layout_constraintTop_toBottomOf="@+id/btnMinus" />
 
     <Button
         android:id="@+id/btn2"
@@ -291,7 +307,8 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/btn1"
         app:layout_constraintRight_toLeftOf="@+id/btn3"
-        app:layout_constraintTop_toTopOf="@+id/btn1" />
+        app:layout_constraintBottom_toTopOf="@+id/btn0"
+        app:layout_constraintTop_toBottomOf="@+id/btn5" />
 
     <Button
         android:id="@+id/btn3"
@@ -303,30 +320,29 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/btn2"
         app:layout_constraintRight_toLeftOf="@+id/btnPlus"
-        app:layout_constraintTop_toTopOf="@+id/btn2" />
+        app:layout_constraintBottom_toTopOf="@+id/btnDecPoint"
+        app:layout_constraintTop_toBottomOf="@+id/btn6" />
 
     <Button
         android:id="@+id/btn1"
         android:layout_width="88dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="19dp"
-        android:layout_marginTop="8dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_1"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineHor2"
+        app:layout_constraintBottom_toTopOf="@+id/btnPlusMin"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/btn2"
-        app:layout_constraintTop_toTopOf="@+id/guidelineHor3" />
+        app:layout_constraintTop_toBottomOf="@+id/btn4" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guidelineHor2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.84"
-        tools:layout_editor_absoluteY="435dp"
+        app:layout_constraintGuide_percent="0.86"
+        tools:layout_editor_absoluteY="440dp"
         tools:layout_editor_absoluteX="0dp" />
 
     <Button
@@ -339,7 +355,9 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/btnDecPoint"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btnDecPoint" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlus"
+        app:layout_constraintVertical_bias="0.56" />
 
     <Button
         android:id="@+id/btnDecPoint"
@@ -351,7 +369,9 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/btn0"
         app:layout_constraintRight_toLeftOf="@+id/btnEqual"
-        app:layout_constraintTop_toTopOf="@+id/btn0" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn3"
+        app:layout_constraintVertical_bias="0.56" />
 
     <Button
         android:id="@+id/btn0"
@@ -363,31 +383,31 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/btnPlusMin"
         app:layout_constraintRight_toLeftOf="@+id/btnDecPoint"
-        app:layout_constraintTop_toTopOf="@+id/btnPlusMin" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn2"
+        app:layout_constraintVertical_bias="0.56" />
 
     <Button
         android:id="@+id/btnPlusMin"
         android:layout_width="88dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_pl_min"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineHor1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/btn0"
-        app:layout_constraintTop_toTopOf="@+id/guidelineHor2"
-        app:layout_constraintVertical_bias="0.006" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn1"
+        app:layout_constraintVertical_bias="0.56" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guidelineHor1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="1"
-        tools:layout_editor_absoluteY="506dp"
+        app:layout_constraintGuide_percent="1.0"
+        tools:layout_editor_absoluteY="511dp"
         tools:layout_editor_absoluteX="0dp" />
 
 </android.support.constraint.ConstraintLayout>
