@@ -13,8 +13,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="13dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
         android:background="@android:color/background_light"
         android:backgroundTint="@android:color/background_light"
         android:gravity="center_vertical|center_horizontal"
@@ -42,46 +42,46 @@
 
     <Button
         android:id="@+id/btn_oneDevX"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_one_dev_x"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnDevide"
         app:layout_constraintLeft_toRightOf="@+id/btn_pow"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/btnDevide"
         app:layout_constraintTop_toBottomOf="@+id/txtScreen" />
 
     <Button
         android:id="@+id/btn_pow"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_pow_2"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnDelete"
         app:layout_constraintLeft_toRightOf="@+id/btn_root"
         app:layout_constraintRight_toLeftOf="@+id/btn_oneDevX"
-        app:layout_constraintBottom_toTopOf="@+id/btnDelete"
         app:layout_constraintTop_toBottomOf="@+id/txtScreen" />
 
     <Button
         android:id="@+id/btn_root"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_root"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnC"
         app:layout_constraintLeft_toRightOf="@+id/btnPercent"
         app:layout_constraintRight_toLeftOf="@+id/btn_pow"
-        app:layout_constraintBottom_toTopOf="@+id/btnC"
         app:layout_constraintTop_toBottomOf="@+id/txtScreen" />
 
     <Button
         android:id="@+id/btnPercent"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_prcnt"
@@ -103,7 +103,7 @@
 
     <Button
         android:id="@+id/btnDevide"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_devision"
@@ -116,7 +116,7 @@
 
     <Button
         android:id="@+id/btnDelete"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_delete"
@@ -129,7 +129,7 @@
 
     <Button
         android:id="@+id/btnC"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_c"
@@ -142,7 +142,7 @@
 
     <Button
         android:id="@+id/btnCE"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_ce"
@@ -164,7 +164,7 @@
 
     <Button
         android:id="@+id/btnMult"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_x"
@@ -177,7 +177,7 @@
 
     <Button
         android:id="@+id/btn9"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_9"
@@ -190,7 +190,7 @@
 
     <Button
         android:id="@+id/btn8"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_8"
@@ -203,7 +203,7 @@
 
     <Button
         android:id="@+id/btn7"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_7"
@@ -225,7 +225,7 @@
 
     <Button
         android:id="@+id/btnMinus"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_minus"
@@ -238,7 +238,7 @@
 
     <Button
         android:id="@+id/btn6"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_6"
@@ -251,7 +251,7 @@
 
     <Button
         android:id="@+id/btn5"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_5"
@@ -264,7 +264,7 @@
 
     <Button
         android:id="@+id/btn4"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_4"
@@ -286,7 +286,7 @@
 
     <Button
         android:id="@+id/btnPlus"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/plus"
@@ -299,7 +299,7 @@
 
     <Button
         android:id="@+id/btn2"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_2"
@@ -312,7 +312,7 @@
 
     <Button
         android:id="@+id/btn3"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_3"
@@ -325,7 +325,7 @@
 
     <Button
         android:id="@+id/btn1"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_1"
@@ -341,13 +341,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.86"
+        app:layout_constraintGuide_percent="0.82"
         tools:layout_editor_absoluteY="440dp"
         tools:layout_editor_absoluteX="0dp" />
 
     <Button
         android:id="@+id/btnEqual"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_equal"
@@ -361,7 +361,7 @@
 
     <Button
         android:id="@+id/btnDecPoint"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_dot"
@@ -375,7 +375,7 @@
 
     <Button
         android:id="@+id/btn0"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_0"
@@ -389,7 +389,7 @@
 
     <Button
         android:id="@+id/btnPlusMin"
-        android:layout_width="88dp"
+        android:layout_width="82dp"
         android:layout_height="65dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/btn_pl_min"
