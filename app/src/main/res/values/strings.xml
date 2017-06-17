@@ -2,11 +2,27 @@
     <string name="app_name">UI Essentials: Simple calculator</string>
     <string name="original_text">0</string>
     <string name="plus">+</string>
+    <string name="btn_0">0</string>
     <string name="btn_1">1</string>
     <string name="btn_2">2</string>
     <string name="btn_3">3</string>
+    <string name="btn_4">4</string>
+    <string name="btn_5">5</string>
+    <string name="btn_6">6</string>
+    <string name="btn_7">7</string>
+    <string name="btn_8">8</string>
+    <string name="btn_9">9</string>
+    <string name="btn_prcnt">%</string>
     <string name="btn_pl_min">+-</string>
-    <string name="btn_0">0</string>
     <string name="btn_equal">=</string>
     <string name="btn_dot">.</string>
+    <string name="btn_minus">-</string>
+    <string name="btn_x">x</string>
+    <string name="btn_devision">/</string>
+    <string name="btn_delete"><![CDATA[<-]]></string>
+    <string name="btn_c">C</string>
+    <string name="btn_ce">CE</string>
+    <string name="btn_one_dev_x">1/x</string>
+    <string name="btn_pow_2">pow 2</string>
+    <string name="btn_root">root</string>
 </resources>
