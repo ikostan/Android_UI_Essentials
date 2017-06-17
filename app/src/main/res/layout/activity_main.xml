@@ -1,38 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="com.example.uiessentials.MainActivity">
 
     <TextView
-        android:id="@+id/txtHeader"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="41dp"
-        android:textSize="24sp"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:id="@+id/txtScreen"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:background="@android:color/background_light"
+        android:gravity="right|center"
+        android:paddingRight="4dp"
+        android:text="@string/original_text"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineHor4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="178dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineHor3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="365dp" />
 
     <Button
-        android:id="@+id/btnChangeTxt"
+        android:id="@+id/btnPlus"
+        android:layout_width="88dp"
+        android:layout_height="65dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/plus"
+        app:layout_constraintLeft_toRightOf="@+id/btn3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn3" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="88dp"
+        android:layout_height="65dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/btn_2"
+        app:layout_constraintLeft_toRightOf="@+id/btn1"
+        app:layout_constraintRight_toLeftOf="@+id/btn3"
+        app:layout_constraintTop_toTopOf="@+id/btn1" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="88dp"
+        android:layout_height="65dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/btn_3"
+        app:layout_constraintLeft_toRightOf="@+id/btn2"
+        app:layout_constraintRight_toLeftOf="@+id/btnPlus"
+        app:layout_constraintTop_toTopOf="@+id/btn2" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="88dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="19dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/btn_1"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHor2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn2"
+        tools:ignore="HardcodedText"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHor3"
+        android:layout_marginTop="8dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineHor2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/btn_changeTxt"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.83" />
+
+    <Button
+        android:id="@+id/btnEqual"
+        android:layout_width="88dp"
+        android:layout_height="65dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/btn_equal"
+        app:layout_constraintTop_toTopOf="@+id/btnDecPoint"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtHeader"
-        app:layout_constraintVertical_bias="0.079" />
+        app:layout_constraintLeft_toRightOf="@+id/btnDecPoint"
+        android:layout_marginTop="-71dp" />
+
+    <Button
+        android:id="@+id/btnDecPoint"
+        android:layout_width="88dp"
+        android:layout_height="65dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/btn_dot"
+        app:layout_constraintRight_toLeftOf="@+id/btnEqual"
+        app:layout_constraintTop_toTopOf="@+id/btn0"
+        app:layout_constraintLeft_toRightOf="@+id/btn0"
+        android:layout_marginTop="-71dp" />
+
+    <Button
+        android:id="@+id/btn0"
+        android:layout_width="88dp"
+        android:layout_height="65dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/btn_0"
+        app:layout_constraintRight_toLeftOf="@+id/btnDecPoint"
+        app:layout_constraintTop_toTopOf="@+id/btnPlusMin"
+        app:layout_constraintLeft_toRightOf="@+id/btnPlusMin"
+        android:layout_marginTop="-71dp" />
+
+    <Button
+        android:id="@+id/btnPlusMin"
+        android:layout_width="88dp"
+        android:layout_height="65dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/btn_pl_min"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHor2"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHor1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn0"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineHor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.99"
+        tools:layout_editor_absoluteY="506dp"
+        tools:layout_editor_absoluteX="0dp" />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,4 +1,12 @@
 <resources>
-    <string name="app_name">UI Essentials</string>
-    <string name="btn_changeTxt">Change Header Text</string>
+    <string name="app_name">UI Essentials: Simple calculator</string>
+    <string name="original_text">0</string>
+    <string name="plus">+</string>
+    <string name="btn_1">1</string>
+    <string name="btn_2">2</string>
+    <string name="btn_3">3</string>
+    <string name="btn_pl_min">+-</string>
+    <string name="btn_0">0</string>
+    <string name="btn_equal">=</string>
+    <string name="btn_dot">.</string>
 </resources>

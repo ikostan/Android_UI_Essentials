@@ -9,33 +9,16 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnChangeTxt;
-    private TextView txtHeader;
+    private Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0;
+    private TextView txtScreen;
+    private String result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        txtHeader = (TextView) findViewById(R.id.txtHeader); //Text field
-        txtHeader.setText("Hello World!");
-        btnChangeTxt = (Button) findViewById(R.id.btnChangeTxt); //Button
 
-        //Event listener
-        btnChangeTxt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                if(txtHeader.getText() == "Hello World!"){
-                    txtHeader.setText("New Text!"); //reverse to original text
-                    Log.d("onClick method called", "New Text!"); //Log
-                }
-                else{
-                    txtHeader.setText("Hello World!"); //reverse to original text
-                    Log.d("onClick method called", "Hello World!"); //Log
-                }
-            }
-        });
     }
 
     //END
