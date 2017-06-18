@@ -1,6 +1,8 @@
 # Android UI Essentials
 Create a user interface (UI) for a mobile app built with the Android SDK.
 
+## NOTE: This thing is still a Work in Progress. Files, instructions, and other stuff might change!
+
 ## Topics include:
 Using View components<br />
 Exploring the design repository<br />
