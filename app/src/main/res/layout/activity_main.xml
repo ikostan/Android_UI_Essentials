@@ -42,12 +42,8 @@
 
     <Button
         android:id="@+id/btn_oneDevX"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/btn_one_dev_x"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintBottom_toTopOf="@+id/btnDevide"
         app:layout_constraintLeft_toRightOf="@+id/btn_pow"
         app:layout_constraintRight_toRightOf="parent"
@@ -55,12 +51,8 @@
 
     <Button
         android:id="@+id/btn_pow"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/btn_pow_2"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintBottom_toTopOf="@+id/btnDelete"
         app:layout_constraintLeft_toRightOf="@+id/btn_root"
         app:layout_constraintRight_toLeftOf="@+id/btn_oneDevX"
@@ -68,12 +60,8 @@
 
     <Button
         android:id="@+id/btn_root"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/btn_root"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintBottom_toTopOf="@+id/btnC"
         app:layout_constraintLeft_toRightOf="@+id/btnPercent"
         app:layout_constraintRight_toLeftOf="@+id/btn_pow"
@@ -81,12 +69,8 @@
 
     <Button
         android:id="@+id/btnPercent"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/btn_prcnt"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintBottom_toTopOf="@+id/btnCE"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/btn_root"
@@ -103,12 +87,8 @@
 
     <Button
         android:id="@+id/btnDevide"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/btn_devision"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintLeft_toRightOf="@+id/btnDelete"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/btnMult"
@@ -116,12 +96,8 @@
 
     <Button
         android:id="@+id/btnDelete"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/btn_delete"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintLeft_toRightOf="@+id/btnC"
         app:layout_constraintRight_toLeftOf="@+id/btnDevide"
         app:layout_constraintBottom_toTopOf="@+id/btn9"
@@ -129,12 +105,8 @@
 
     <Button
         android:id="@+id/btnC"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/btn_c"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintLeft_toRightOf="@+id/btnCE"
         app:layout_constraintRight_toLeftOf="@+id/btnDelete"
         app:layout_constraintBottom_toTopOf="@+id/btn8"
@@ -142,12 +114,8 @@
 
     <Button
         android:id="@+id/btnCE"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/btn_ce"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintBottom_toTopOf="@+id/btn7"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/btnC"
@@ -164,12 +132,8 @@
 
     <Button
         android:id="@+id/btnMult"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/btn_x"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintLeft_toRightOf="@+id/btn9"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/btnMinus"
@@ -177,12 +141,8 @@
 
     <Button
         android:id="@+id/btn9"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/btn_9"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintLeft_toRightOf="@+id/btn8"
         app:layout_constraintRight_toLeftOf="@+id/btnMult"
         app:layout_constraintBottom_toTopOf="@+id/btn6"
@@ -190,12 +150,8 @@
 
     <Button
         android:id="@+id/btn8"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/btn_8"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintLeft_toRightOf="@+id/btn7"
         app:layout_constraintRight_toLeftOf="@+id/btn9"
         app:layout_constraintBottom_toTopOf="@+id/btn5"
@@ -203,12 +159,8 @@
 
     <Button
         android:id="@+id/btn7"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/btn_7"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintBottom_toTopOf="@+id/btn4"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/btn8"
@@ -225,12 +177,8 @@
 
     <Button
         android:id="@+id/btnMinus"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/btn_minus"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintLeft_toRightOf="@+id/btn6"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/btnPlus"
@@ -238,12 +186,8 @@
 
     <Button
         android:id="@+id/btn6"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/btn_6"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintLeft_toRightOf="@+id/btn5"
         app:layout_constraintRight_toLeftOf="@+id/btnMinus"
         app:layout_constraintBottom_toTopOf="@+id/btn3"
@@ -251,12 +195,8 @@
 
     <Button
         android:id="@+id/btn5"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/btn_5"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintLeft_toRightOf="@+id/btn4"
         app:layout_constraintRight_toLeftOf="@+id/btn6"
         app:layout_constraintBottom_toTopOf="@+id/btn2"
@@ -264,12 +204,8 @@
 
     <Button
         android:id="@+id/btn4"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/btn_4"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintBottom_toTopOf="@+id/btn1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/btn5"
@@ -286,12 +222,8 @@
 
     <Button
         android:id="@+id/btnPlus"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/plus"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintLeft_toRightOf="@+id/btn3"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/btnEqual"
@@ -299,12 +231,8 @@
 
     <Button
         android:id="@+id/btn2"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/btn_2"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintLeft_toRightOf="@+id/btn1"
         app:layout_constraintRight_toLeftOf="@+id/btn3"
         app:layout_constraintBottom_toTopOf="@+id/btn0"
@@ -312,12 +240,8 @@
 
     <Button
         android:id="@+id/btn3"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/btn_3"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintLeft_toRightOf="@+id/btn2"
         app:layout_constraintRight_toLeftOf="@+id/btnPlus"
         app:layout_constraintBottom_toTopOf="@+id/btnDecPoint"
@@ -325,12 +249,8 @@
 
     <Button
         android:id="@+id/btn1"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/btn_1"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintBottom_toTopOf="@+id/btnPlusMin"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/btn2"
@@ -347,12 +267,8 @@
 
     <Button
         android:id="@+id/btnEqual"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/btn_equal"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintLeft_toRightOf="@+id/btnDecPoint"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -361,12 +277,8 @@
 
     <Button
         android:id="@+id/btnDecPoint"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/btn_dot"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintLeft_toRightOf="@+id/btn0"
         app:layout_constraintRight_toLeftOf="@+id/btnEqual"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -375,12 +287,8 @@
 
     <Button
         android:id="@+id/btn0"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/btn_0"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintLeft_toRightOf="@+id/btnPlusMin"
         app:layout_constraintRight_toLeftOf="@+id/btnDecPoint"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -389,12 +297,8 @@
 
     <Button
         android:id="@+id/btnPlusMin"
-        android:layout_width="82dp"
-        android:layout_height="65dp"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/btn_pl_min"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        style="@style/btn_style"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/btn0"
         app:layout_constraintBottom_toBottomOf="parent"
