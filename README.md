@@ -26,3 +26,9 @@ Managing image display with Picasso<br />
 ![GUI](https://github.com/ikostan/Android_UI_Essentials/blob/master/images/4.JPG?raw=true "GUI screenshot")
 
 ### Source: https://www.lynda.com/Android-tutorials/Learning-Android-App-Development-Design-User-Interface/518054-2.html
+
+## External resources used for this project:
+
+### IconFinder: https://www.iconfinder.com/
+
+### Material Design Palette: https://www.materialpalette.com
